@@ -31,16 +31,4 @@ Frontend: HTML5, CSS3, JavaScript (ES6+)
 
 Tools: Visual Studio Code, Figma (UI Planning), Netlify (Deployment)
 
-Installation
-To run this project locally:
 
-Clone the repository:
-
-Bash
-git clone https://github.com/YOUR_USERNAME/balloon-pop-game.git
-Navigate to the folder:
-
-Bash
-cd balloon-pop-game
-Launch the game:
-Open index.html in your preferred browser.
