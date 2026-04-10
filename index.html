@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balloon Pop Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="how-to-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>How to Play 🎈</h2>
+                <button id="minimize-btn" title="Minimize">—</button>
+            </div>
+            <div id="modal-body">
+                <p>Pop as many balloons as you can in 30 seconds!</p>
+                <div class="video-container">
+                    <video width="100%" controls loop>
+                        <source src="Recording 2026-04-10 230853.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button id="close-instructions">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-screen">
+        <h1>🎈 Balloon Pop Game 🎈</h1>
+        <input type="text" id="player-name" placeholder="Enter your name..." maxlength="15">
+        <button id="start-btn">Start Game</button>
+        
+        <div id="high-scores">
+            <h3>🏆 All-Time Best</h3>
+            <ul id="scores-list"></ul>
+        </div>
+    </div>
+
+    <div id="scoreboard">
+        Time: <span id="time">30</span>s | Score: <span id="score">0</span>
+    </div>
+
+    <div id="balloon-container"></div>
+
+    <div id="end-screen">
+        <h1>Game Over!</h1>
+        <p>Final Score: <span id="final-score"></span></p>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
